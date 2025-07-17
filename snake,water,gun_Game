@@ -1,0 +1,20 @@
+import random
+
+youDict = {"s": 1, "w": -1, "g": 0}
+reverseDict = {1: "Snake", -1: "Water", 0: "Gun"}
+
+computer = random.choice([-1, 0, 1])
+youstr = input("Enter your choice (s for Snake, w for Water, g for Gun): ").lower()
+
+if youstr not in youDict:
+    print("Invalid input!")
+else:
+    you = youDict[youstr]
+    print(f"You chose {reverseDict[you]}\nComputer chose {reverseDict[computer]}")
+
+    if you == computer:
+        print("It's a draw!")
+    elif (you, computer) in [(1, -1), (0, 1), (-1, 0)]:
+        print("You win!")
+    else:
+        print("You lose!")
