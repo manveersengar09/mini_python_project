@@ -1,0 +1,47 @@
+# QUIZ GAME 
+print("welcome to our manveer's program ")
+namex = input("what is your name ? \n").lower()
+play = input("do you wants to play ? \n")
+
+if play.lower() == "yes":
+    print("LETS GO")
+else:
+    print("no problem")
+    exit()
+
+name = input("what is your name ? \n ").lower()
+if name.lower() == namex:
+    print(f"correct your name is {name}")
+else:
+    print("wrong name!")
+
+quiz1 = input("what does RAM stands for ? \n".lower())
+if quiz1.lower() == "random access memory":
+    print(f"correct,answer is {quiz1}")
+else:
+    print("incorrect !")
+
+quiz2 = input("what does ROM stands for ? \n").lower()
+if quiz2.lower() == "read only memory":
+    print(f"correct,answer is {quiz2}")
+else:
+    print("incorrect !")
+
+quiz3 = input("what does http stands for ? \n").lower()
+if quiz3.lower() == "hypertext transfer protocol":
+    print(f"correct,answer is {quiz3}")
+else:
+    print("incorrect !")
+
+quiz4 = input("what is the full form of CPU ? \n").lower()
+if quiz4.lower() == "central processing unit":
+    print(f"correct,answer is {quiz4}")
+else:
+    print("incorrect !")
+
+quiz5 = input("what is the full form of www ? \n").lower()
+if quiz5.lower() == "world wide web":
+    print(f"correct,answer is {quiz5}")
+else:
+    print("incorrect !")
+    
