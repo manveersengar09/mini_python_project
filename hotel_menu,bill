@@ -1,0 +1,43 @@
+import webbrowser
+menu = {
+'hotcoffee' : 80,
+'coldcoffee' : 90,
+'noodles' : 50,
+'sandwitch' : 90,
+'cheesesandwitch' : 150,
+'chocolateshake' : 130,
+'mangoshake' : 99,
+'pizza' : 299,
+'burger' : 99,
+}
+name = input("PLEASE ENTER YOUR NAME :- ").upper()
+print(f"WELCOME TO MANVEER'S RESTAURENT \n {name} PLEASE READ THE GIVEN MENU")
+print(" hotcoffee = 80 RS \n coldcoffee=90 RS \n noodles = 50 RS \n sandwitch = 90 RS \n cheesesandwitch = 150" \
+" RS \n chocolateshake = 130 RS \n mangoshake = 99 RS \n pizza = 299 RS \n burger = 99RS \n ")
+order_total = 0
+item1 = input("ENTER THE ITEM YOU WANT'S TO ORDER :- ")
+if item1 in menu:
+    order_total += menu[item1]
+    print(f"your item {item1} has been added to our order")
+else:
+    print(f"item{item1} is not available {name}")
+
+another_order = input("DO U WANT TO ORDER ANOTHER ITEM :- 'YES/NO' = ")
+if another_order == "yes":
+        item2 = input("ENTER THE ITEM YOU WANT'S TO ORDER :- ")
+        if item2 in menu:
+            order_total += menu[item2]
+            print(f"your item {item2} has been added to our order")
+        else:
+            print(f"item{item2} is not available {name}")
+print(f"THE TOTAL AMOUNT OF ITEM IS={order_total}")
+
+pay = input("DO YOU WANT'S TO PAY NOW (Yes/no) = ")
+if pay == "yes":
+    webbrowser.open("www.paytm.com")
+else:
+    print(f"NO PROBLEM {name} pay later ")
+
+TID = input("PLEASE ENTER TRANSACTION ID :- ")
+print("PAYMENT SUCCESSFUL")
+print(" THANK U SIR 😊 ")
