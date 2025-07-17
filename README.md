@@ -1,1 +1,1 @@
-this is a type of game 
+this is only for practice
