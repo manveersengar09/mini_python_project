@@ -1,0 +1,28 @@
+# rock,paper,scissor;
+import random
+game_item =["rock","paper","scissor"]
+computer = random.choice(game_item)
+user = input("ENTER rock , paper , scissor :- ")
+print(f"computer = {computer}")
+# ROCK
+if (user == "rock" and computer == "rock"):
+    print("match tie")
+elif(user == "rock" and computer == "paper"):
+    print("computer win")
+elif(user == "rock" and computer == "scissor"):
+    print("user win")
+# PAPER
+if (user == "paper" and computer == "paper"):
+    print("match tie")
+elif(user == "paper" and computer == "scissor"):
+    print("computer win")
+elif(user == "paper" and computer == "rock"):
+    print("user win")
+#SCISSOR
+    if (user == "scissor" and computer == "scissor"):
+        print("match tie")
+elif(user == "scissor" and computer == "rock"):
+    print("computer win")
+elif(user == "scissor" and computer == "paper"):
+    print("user win")
+    
