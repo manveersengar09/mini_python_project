@@ -1,0 +1,59 @@
+# CHOOSE_YOUR_OWN_ADVENTURE__GAME__
+name = input("ENTER YOUR NAME :- ").upper()
+print(f"WELCOME {name} TO OUR ADVANTURE GAME")
+choose = input("do you wants to play:(yes/no)\n")
+if choose == "yes":
+    print('LETS GO 🤩')
+else:
+    print("no problem,next time")
+    exit()
+root = input("enter your areas u want to visit :(kota river,dara forest)\n")
+if root == "kota river":
+    print("you choose kota river to visit ")
+    river = input("you want's to swim or cross (swim , cross)\n")
+    if river == "swim":
+        print("you killed by alligator 😔")
+        print("you died = you lost")
+    elif river == "cross":
+        print("you cross a river by hanging bridge")
+        print("you see a man on bridze")
+        meet = input("u want to meet with stranger? [yes/no]\n")
+        if meet == "yes":
+            print("stranger give u a gold,you win 🏆")
+            exit()
+elif root == "dara forest":
+    print("you choose dara forest to visit ")
+    forest = input("do u want to cross the forest(a) or meet with forest department officer(b)\n")
+    if forest == "a":
+        print("you see a lion")
+        see = input("yes/no\n")
+        if see == "yes":
+            print("run")
+            print("now you see a lion")
+            saw = input("yes/no\n")
+            if saw == "yes":
+                print("run")
+                print("you tired🥱at that time lion kill you,you died")
+                print("you died = you lost 😔")
+            elif saw == "no":
+                print("u died = u lost 😔")
+                exit()
+        elif see == "no":
+            print("but lion can see you")
+            print("u died = u lost 😔")
+            exit()
+    elif forest == "b":
+        forest_department = input("do you want's to visit forest_department : (yes/no) \n")
+        if forest_department == "yes":
+            print("welcome to dara forest department\n")
+            visit = input("you want to visit dara forest with officer ? [yes/no]\n")
+            if visit == "yes":
+                print("you got a life in jungle")
+                print("life = win 🏆")
+            elif visit == "no":
+                print("without office you killed by a lion or wild animal")
+                print("killed = lost 😔")
+
+        elif forest_department == "no":
+            print("without permission you can't enter'GO BACK'")
+            print("GO-BACK = LOST GAME 😔")
