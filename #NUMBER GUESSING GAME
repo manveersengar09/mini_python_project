@@ -1,0 +1,39 @@
+#NUMBER GUESSING GAME 
+import random
+guessing = 0
+
+print("WELCOME TO MANVEER'S NUMBER GUESSING GAME")
+welcome = input("do you want's to play \n ").lower()
+if welcome == "yes".lower():
+    print("LET'S go 🤩")
+else:
+    print("no problem")
+    exit()
+
+user_input_a =int(input("enter a starting number :- "))
+user_input_b =int(input("enter a ending number :- "))
+
+number = random.randint(user_input_a,user_input_b)
+
+#computer = print(f"computer guess {number}")
+
+while True:
+    
+    guessing += 1
+    user_number = int(input("guess a number :-"))
+
+            
+    if number == user_number:
+        print("you got it 🤩 🏆")
+        print(f"YOU COMLETE IT INTO {guessing} GUESS 🏆")
+        exit()
+    if number > user_number:
+        print("you got it wrong!")
+        print("increase your number")
+
+
+    if number < user_number:
+        print("you got it wrong!")
+        print("decrease your number")
+
+print(f"YOU COMLETE IT INTO {guessing} GESS")
