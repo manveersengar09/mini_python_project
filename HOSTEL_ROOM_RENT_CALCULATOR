@@ -1,0 +1,13 @@
+# HOSTEL ROOM RENT CALCULATOR 
+
+rent = int(input("ENTER YOUR HOSTEL RENT :- "))
+food0 = list(map(int,input("ENTER YOUR MONEY SPEND ON FOOD :-").split()))
+food = sum(food0)
+electricity_unit = int(input("ENTER THE TOTAL OF ELECTRICITY UNIT :- "))
+charge_per_unit = int(input("ENTER THE CHARGE PER UNIT :- "))
+person = int(input("ENTER THE NO. OF PERSON LIVING IN ROOM :- "))
+
+total_bill = electricity_unit * charge_per_unit
+total = (rent + food + total_bill) // person 
+
+print(f"TOTAL MONEY PAID BY PER PERSON :- {total}")
